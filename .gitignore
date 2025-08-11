@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# VS Code User data caches/state (do not version)
+History/
+globalStorage/
+workspaceStorage/
+sync/
+
+# Logs
+*.log
+
+# Node (just in case)
+node_modules/
