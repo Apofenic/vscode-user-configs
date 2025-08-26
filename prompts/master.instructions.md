@@ -85,8 +85,8 @@ Say: "I'm analyzing the 48 imported SDK types and considering three implementati
   
 ### Project Setup & Templates
 
-- **If asked to create `*.planning.instructions.md` or `*.tasks.instructions.md` files, add them to `.github/instructions/` directory (create if needed) and use templates from `/Users/anthonylubrino/Global_MCP/prompt_templates/workspace_templates/`**
-- **Every project needs `.vscode/mcp.json` at project root - use template at `/Users/anthonylubrino/Global_MCP/prompt_templates/mcp.json` and install required dependencies**
+- **If asked to create `*.planning.instructions.md` or `*.tasks.instructions.md` files, add them to `.github/instructions/` directory (create if needed) and use templates from `/Users/anthonylubrino/Library/Application Support/Code/User/templates**
+- **Every project needs `.vscode/mcp.json` at project root - use template at `/Users/anthonylubrino/Global_MCP/templates/mcp.json` and install required dependencies**
 - **Always copy from templates, never generate instruction files from scratch**
 - **Before declaring files missing or inaccessible, check filesystem MCP for files outside the current workspace** - use filesystem tools to search broader locations before concluding files cannot be located
   
