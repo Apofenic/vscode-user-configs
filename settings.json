@@ -1,107 +1,137 @@
 {
-  "editor.snippetSuggestions": "top",
-  "editor.tabCompletion": "on",
-  "editor.fontSize": 14,
-  "git.autofetch": true,
-  "yaml.schemas": {
-    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-3.8.8/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "atlascode.jira.enabled": true,
+  // Global VS Code user settings (JSONC). Categories are annotated for clarity:
+  // Atlassian, Chat/AI, Editor UX & performance, Explorer & Files, Git, Languages/Tools,
+  // Integrations, Terminal & UI, and Language-specific overrides.
   "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.enabled": true,
   "atlascode.jira.jqlList": [
     {
-      "id": "b1effa58-ae81-400c-9a2a-e810551ff797",
       "enabled": true,
+      "id": "b1effa58-ae81-400c-9a2a-e810551ff797",
+      "monitor": true,
       "name": "My eltorocorp Issues",
       "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "3d546da2-b006-47ee-a72f-4b8b244c0770",
-      "monitor": true
+      "siteId": "3d546da2-b006-47ee-a72f-4b8b244c0770"
     }
   ],
+  // Spelling dictionary
+  "cSpell.userWords": [
+    "eltoro",
+    "hagrid",
+    "nextgen",
+    "Orgmanagerv"
+  ],
+  "docker.extension.enableComposeLanguageServer": false,
+  // Editor UX & performance
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "vscode-pets.theme": "forest",
-  "vscode-pets.throwBallWithMouse": true,
-  "vscode-pets.petColor": "black",
-  "vscode-pets.petSize": "medium",
-  "githubPullRequests.pullBranch": "never",
-  "go.toolsManagement.autoUpdate": true,
-  "workbench.startupEditor": "none",
-  "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "terminal.integrated.lineHeight": 1.4,
-  "terminal.integrated.fontSize": 14,
-  "explorer.confirmDelete": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.env.osx": {},
-  "github.copilot.advanced": {},
-  "gopls": {
-    "build.buildFlags": ["-tags=unit,integration,smoke"]
-  },
-  "opa.dependency_paths.regal": "/Users/anthonylubrino/regal",
-  "opa.languageServers": ["regal"],
-  "mssql.connectionGroups": [
-    {
-      "name": "ROOT",
-      "id": "E0447E57-D8AC-49E7-9D1F-E1A58E2D9B6C"
-    }
-  ],
-  "mssql.connections": [],
-  "cSpell.userWords": ["eltoro", "hagrid", "nextgen", "Orgmanagerv"],
-  "vscode-pets-ex.theme": "animated",
-  "vscode-pets-ex.petSize": "medium",
-  "vscode-pets-ex.petColor": "akita",
-  "vscode-pets-ex.petType": "fox",
-  "inlineChat.enableV2": true,
-  "github.copilot.chat.copilotDebugCommand.enabled": false,
-  "github.copilot.chat.startDebugging.enabled": false,
+  "editor.formatOnType": false,
   "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.smoothScrolling": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabCompletion": "on",
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "files.exclude": {
-    "**/.git": false,
-    "**/.vscode": false,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true
-  },
+  "eslint.run": "onSave",
+  // Explorer behavior
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.excludeGitIgnore": false,
-  "scm.defaultViewMode": "tree",
-  "git.decorations.enabled": true,
-  "explorer.sortOrder": "default",
   "explorer.fileNesting.enabled": false,
-  "git.enabled": true,
-  "git.path": null,
+  "explorer.sortOrder": "default",
+  // Files & associations
   "files.associations": {
     "*.instructions.md": "markdown"
   },
-  "search.exclude": {
+  // Files: UI excludes
+  "files.exclude": {
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/node_modules": true
+    "**/.git": false,
+    "**/.vscode": false,
+    "**/Thumbs.db": true
   },
+  // Files: watcher excludes (performance)
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
+    "**/.next/**": true,
+    "**/.turbo/**": true,
+    "**/coverage/**": true,
+    "**/dist-types/**": true,
+    "**/dist/**": true,
     "**/node_modules/*/**": true
   },
-  "docker.extension.enableComposeLanguageServer": false,
-  "[instructions]": {
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "diffEditor.ignoreTrimWhitespace": false
+  // Git & GitHub
+  "git.autofetch": true,
+  "git.decorations.enabled": true,
+  "git.enabled": true,
+  "git.path": null,
+  "githubPullRequests.pullBranch": "never",
+  // Go tooling
+  "go.toolsManagement.autoUpdate": true,
+  "gopls": {
+    "build.buildFlags": [
+      "-tags=unit,integration,smoke"
+    ]
   },
-  "chat.sendElementsToChat.attachCSS": false
+  // JS/TS import updates
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "mssql.connectionGroups": [
+    {
+      "id": "E0447E57-D8AC-49E7-9D1F-E1A58E2D9B6C",
+      "name": "ROOT"
+    }
+  ],
+  "mssql.connections": [],
+  // OPA / Policy
+  "opa.dependency_paths.regal": "/Users/anthonylubrino/regal",
+  "opa.languageServers": [
+    "regal"
+  ],
+  "scm.defaultViewMode": "tree",
+  // Search excludes
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/coverage": true,
+    "**/dist-types": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/Thumbs.db": true
+  },
+  // Terminal
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
+  // TypeScript server tuning (performance)
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "useFsEvents"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // VS Code Pets (fun)
+  "vscode-pets.petColor": "black",
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.theme": "forest",
+  // Workbench
+  "workbench.startupEditor": "none",
+  // YAML schemas
+  "yaml.schemas": {
+    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-3.8.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  // Language-specific overrides
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[instructions]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
+  }
 }
