@@ -111,7 +111,7 @@
 				"3. If I approve, perform a comprehensive review of the work done",
 				"4. Create a task analysis document and save it in \".github/docs\"",
 				"5. Update both the planning and tasks instructions to reflect the changes",
-				"6. Commit all changes with a very short commit message and push them up",
+				"6. Commit all changes with a very short commit message and push them up to github using the appropriate git commands",
 				"7. Explain the next sub-task to me, what files you're going to be changing and what code you're planning to change in those files",
 				"8. Ask if I want to proceed, only continuing if I agree to continue",
 				"",
