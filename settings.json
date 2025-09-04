@@ -120,7 +120,7 @@
   "workbench.startupEditor": "none",
   // YAML schemas
   "yaml.schemas": {
-    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-3.8.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-3.8.13/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   // Language-specific overrides
   "[json]": {
