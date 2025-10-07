@@ -1,0 +1,100 @@
+{
+	"servers": {
+		"filesystem": {
+			"type": "stdio",
+			"command": "/Users/anthonylubrino/.nvm/versions/node/v22.17.1/bin/npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"/Users/anthonylubrino"
+			],
+			"env": {}
+		},
+		"browsermcp": {
+			"type": "stdio",
+			"command": "/Users/anthonylubrino/.nvm/versions/node/v22.17.1/bin/npx",
+			"args": [
+				"@browsermcp/mcp@latest"
+			]
+		},
+		"microsoft/playwright-mcp": {
+			"type": "stdio",
+			"command": "/Users/anthonylubrino/.nvm/versions/node/v22.17.1/bin/npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"gallery": "https://api.mcp.github.com/v0/servers/41b79849-7e6c-4fc7-82c0-5a611ea21523",
+			"version": "0.0.1-seed"
+		},
+		"chromedevtools/chrome-devtools-mcp": {
+			"type": "stdio",
+			"command": "/Users/anthonylubrino/.nvm/versions/node/v22.17.1/bin/npx",
+			"args": [
+				"chrome-devtools-mcp@latest",
+				"--browserUrl",
+				"${input:browser_url}",
+				"--headless",
+				"${input:headless}",
+				"--isolated",
+				"${input:isolated}",
+				"--channel",
+				"${input:chrome_channel}"
+			],
+			"gallery": "https://api.mcp.github.com/v0/servers/13749964-2447-4c31-bcab-32731cced504",
+			"version": "0.0.1-seed"
+		},
+		"sunriseapps/imagesorcery-mcp": {
+			"type": "stdio",
+			"command": "imagesorcery-mcp",
+			"gallery": "https://api.mcp.github.com/v0/servers/78ed6aa5-3037-4adb-9bda-8dcda12aa9a5",
+			"version": "1.0.0"
+		},
+		"postmanlabs/postman-mcp-server": {
+			"type": "stdio",
+			"command": "/Users/anthonylubrino/.nvm/versions/node/v22.17.1/bin/npx",
+			"args": [
+				"@postman/postman-mcp-server@latest"
+			],
+			"env": {
+				"POSTMAN_API_KEY": "${input:api_key}"
+			},
+			"gallery": "https://api.mcp.github.com/v0/servers/40516270-789a-bcde-f012-345678901234",
+			"version": "1.0.0"
+		}
+	},
+	"inputs": [
+		{
+			"id": "browser_url",
+			"type": "promptString",
+			"description": "Optional: connect to an already-running Chrome (remote debugging / port-forward). Example: http://127.0.0.1:9222",
+			"password": false
+		},
+		{
+			"id": "headless",
+			"type": "promptString",
+			"description": "Run Chrome headless (true/false). Default: false",
+			"password": false,
+			"default": "false"
+		},
+		{
+			"id": "isolated",
+			"type": "promptString",
+			"description": "Use a temporary user-data-dir (true/false). Default: false",
+			"password": false,
+			"default": "false"
+		},
+		{
+			"id": "chrome_channel",
+			"type": "promptString",
+			"description": "Chrome channel: stable | canary | beta | dev (default: stable).",
+			"password": false,
+			"default": "stable"
+		},
+		{
+			"id": "api_key",
+			"type": "promptString",
+			"description": "Your API key for the service",
+			"password": true
+		}
+	]
+}

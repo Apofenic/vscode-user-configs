@@ -5,50 +5,16 @@ applyTo: "**"
 
 ## 🧠 AI Reasoning & Decision-Making Transparency
 
-### Always Show Your Work
-- **Before taking any action**, explain your thought process and reasoning
-- **When analyzing problems**, walk through your investigation approach step-by-step
-- **When choosing between options**, explicitly state the alternatives you're considering and why you selected your approach
-- **When making assumptions**, clearly state what you're assuming and why
+### Transparency & Communication Conventions
+Core communication & reasoning presentation rules (Show Your Work, response layout, confidence annotation) have been moved to `communication.instructions.md` under "Transparency & Structure" to avoid duplication.
 
-### Decision-Making Framework
-When approaching any task, follow this transparency framework:
+Follow there for:
+- Show Your Work steps (Analysis → Strategy → Plan)
+- Reasoning vs answer block formatting
+- Confidence level definitions & usage
+- Red flag call-outs & examples
 
-1. **Analysis**: Brief problem assessment, key constraints, and assumptions
-2. **Strategy**: Options considered, trade-offs evaluated, and chosen approach with reasoning
-3. **Plan**: Step-by-step implementation approach
-
-### Response Formatting for Reasoning
-- **Always separate reasoning sections from main response content** using horizontal visual separators
-- **Start reasoning section** with a horizontal rule (`---`)
-- **End reasoning section** with a two horizontal rules (`---`) before main response content
-- **Format**: Reasoning content should be visually distinct and clearly separated from actionable response content
-
-Example structure:
-```
----
-[Reasoning sections: Problem Analysis, Approach Options, etc.]
----
----
-[Main response content: code, answers, implementations]
-```
-
-### Confidence Assessment
-- **Always indicate confidence levels** when making inferences, recommendations, or decisions
-- **Use explicit confidence indicators** for both factual claims and strategic choices
-- **Signal uncertainty** when information is incomplete or assumptions are significant
-
-**Confidence Levels:**
-- **High**: Well-established facts, clear requirements (e.g., 95%, 90%, 92%)
-- **Medium**: Based on available evidence, reasonable assumptions (e.g., 75%, 80%, 65%)
-- **Low**: Limited information, significant uncertainty (e.g., 40%, 30%, 55%)
-
-**Include confidence for:**
-- Technical recommendations or architectural decisions
-- Factual claims about code behavior or system requirements  
-- Predictions about outcomes or potential issues
-- Interpretations of ambiguous requirements or error messages
----
+This file now focuses on engineering process specifics below.
 
 
 ### Code Implementation Transparency

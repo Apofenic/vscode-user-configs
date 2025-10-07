@@ -10,19 +10,9 @@
       ],
       "env": {}
     },
-      "browsermcp": {
-        "command": "npx",
-        "args": ["@browsermcp/mcp@latest"]
-      },
-      "jira": {
-      "type": "stdio",
-      "command": "/Users/anthonylubrino/.nvm/versions/node/v18.20.1/bin/mcp-atlassian-jira",
-      "args": [],
-      "env": {
-        "JIRA_HOST": "${env:ATLASSIAN_HOST}",
-        "JIRA_USERNAME": "${env:ATLASSIAN_USER_EMAIL}",
-        "JIRA_API_TOKEN": "${env:ATLASSIAN_API_TOKEN}"
-      }
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
     },
     "playwright": {
       "type": "stdio",

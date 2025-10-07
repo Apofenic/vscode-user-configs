@@ -120,7 +120,7 @@
   "workbench.startupEditor": "none",
   // YAML schemas
   "yaml.schemas": {
-    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-3.8.13/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/anthonylubrino/.vscode/extensions/atlassian.atlascode-4.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   // Language-specific overrides
   "[json]": {
@@ -133,5 +133,22 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false
-  }
+  },
+  "chat.agent.maxRequests": 100,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "chat.mcp.access": "all",
+  "git.openRepositoryInParentFolders": "never"
 }
